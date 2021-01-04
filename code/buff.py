@@ -15,13 +15,10 @@ for item in createList(r1, r2):
              fw.write("\nHi Akshata!\nWelcome to python")
              fw.write("\nThis is sample file.")
 
-    #Append mode.
-    with open("%d_file.txt" % (item), "a") as fa:
-         fa.write("\nThis will add last line") 
-    
     #read mode.
     with open("%d_file.txt" % (item), "r") as fr:
-         print(fr.read())
+         for r in range(100):
+             print(fr.read())
 
 #Get file size
 print(os.stat("%d_file.txt" % (item)).st_size)
